@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="calcul.js"></script>
+	
+	<style type="text/css">
+		form table table td{
+			width: 20px;
+		}
+	</style>
+</head>
+<body>
+
+<form name="calculette" id="calculette">
+	<table border="5px" cellpadding=14>
+		<tr>
+			<td><input name="affiche" id="affiche" size=20 maxlength=15 disabled="disabled" style="text-align: right;"color: #fff;></td>
+		</tr>
+		<tr><td bgcolor="#">
+			<table>
+				<tr>
+					<td><input type="reset" value=" CE " onclick="allonger('CE')"></td>
+					<td><input type="button" value=" ← " id="supprime" onclick="supp()"></td>
+					<td><input type="button" value=" % " onclick="allonger('%')"></td>
+					<td><input type="button" value=" + " onclick="allonger('+')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value=" 7 " onclick="allonger('7')"></td>
+					<td><input type="button" value=" 8 " onclick="allonger('8')"></td>
+					<td><input type="button" value=" 9 " onclick="allonger('9')"></td>
+					<td><input type="button" value=" - " onclick="allonger('-')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value=" 4 " onclick="allonger('4')"></td>
+					<td><input type="button" value=" 5 " onclick="allonger('5')"></td>
+					<td><input type="button" value=" 6 " onclick="allonger('6')"></td>
+					<td><input type="button" value=" * " onclick="allonger('*')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value=" 1 " onclick="allonger('1')"></td>
+					<td><input type="button" value=" 2 " onclick="allonger('2')"></td>
+					<td><input type="button" value=" 3 " onclick="allonger('3')"></td>
+					<td><input type="button" value=" / " onclick="allonger('/')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value=" 0 " onclick="allonger('0')"></td>
+					<td><input type="button" value=" ± " onclick="signe()"></td>
+					<td><input type="button" value=" , " onclick="allonger(',')"></td>
+					<td><input type="button" value=" = " onclick="evaluer('=')"></td>
+				</tr>
+			</table>
+		</td>
+		</tr>
+	</table>
+   </form>
+</body>
+</html>
